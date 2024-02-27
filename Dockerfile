@@ -6,8 +6,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # Stage 2: Run the application with JDK
-FROM openjdk:17.0.4.1-jdk-slim
-WORKDIR /app
+FROM openjdk:17.0.1-jdk-slim
 COPY --from=build /target/Wechat-0.0.1-SNAPSHOT.jar WeChat.jar
 
 EXPOSE 8080
