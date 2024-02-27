@@ -8,6 +8,7 @@ RUN mvn clean package -DskipTests
 # Stage 2: Run the application with JDK
 FROM openjdk:17.0.1-jdk-slim
 WORKDIR /app
-COPY --from=build /WeChat/target/WeChat.jar ./WeChat.jar
+COPY --from=build /app/WeChat/target/WeChat.jar ./WeChat.jar
+
 EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "WeChat.jar"]
