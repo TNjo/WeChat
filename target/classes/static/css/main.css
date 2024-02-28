@@ -19,6 +19,11 @@ body {
     color: #333;
     background-color: #f4f4f4;
     height: 100%;
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .clearfix:after {
@@ -88,7 +93,7 @@ button.primary {
 }
 
 button.accent {
-    background-color: #6db33f;
+    background-color: #3942ed;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12);
     color: #fff;
 }
@@ -217,6 +222,7 @@ button.accent {
     width: 80px;
     height: 38px;
     margin-left: 5px;
+    border-radius:50px;
 }
 
 .chat-header {
@@ -228,6 +234,7 @@ button.accent {
 .chat-header h2 {
     margin: 0;
     font-weight: 500;
+    color: red;
 }
 
 .connecting {
