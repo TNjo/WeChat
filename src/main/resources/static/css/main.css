@@ -19,6 +19,11 @@ body {
     color: #333;
     background-color: #f4f4f4;
     height: 100%;
+    background-image: url('./bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 .clearfix:after {
