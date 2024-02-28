@@ -233,6 +233,7 @@ button.accent {
 .chat-header h2 {
     margin: 0;
     font-weight: 500;
+    color: red;
 }
 
 .connecting {
